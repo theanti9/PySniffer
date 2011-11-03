@@ -28,7 +28,7 @@ pcap_ex.c: In function ‘pcap_ex_next’:
 pcap_ex.c:253: error: dereferencing pointer to incomplete type
 ```
 
-..it can be circumvented through patching your setup.py by adding the following line to the top of the file:
+..it can be circumvented through patching the file *pcap_ex.c* by adding the following line to the top of the file:
 
 ```c
 #define HAVE_PCAP_FILE
